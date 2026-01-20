@@ -172,17 +172,17 @@
   <!-- Chat Kutusu -->
   <div class="chat-wrapper" id="chatWrapper">
     <div class="chat-header">
-      <div>Hurra Türkiye Chat</div>
+      <div>Hurra Turkiye Chat</div>
       <div class="chat-status" id="chatStatus">Hazır</div>
     </div>
 
     <div class="chat-body" id="chatBody">
-      <div class="msg bot">Merhaba! Size nasıl yardımcı olabilirim?</div>
+      <div class="msg bot">Hello! How can I help you??</div>
     </div>
 
     <div class="chat-footer">
       <input class="chat-input" id="chatInput" placeholder="Mesajınızı yazın..." />
-      <button class="chat-send" id="sendBtn" onclick="sendMessage()">Gönder</button>
+      <button class="chat-send" id="sendBtn" onclick="sendMessage()">Send</button>
     </div>
   </div>
 
@@ -249,7 +249,7 @@
       isLoading = true;
       addMsg(text, "user");
       input.value = "";
-      inpuy.disabled = true;
+      input.disabled = true;
 
       sendBtn.disabled = true;
       setStatus("Yanıtlanıyor...");
